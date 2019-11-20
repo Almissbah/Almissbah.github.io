@@ -310,7 +310,7 @@ function openPage(pageName, elmnt) {
     tabcontent[i].style.display = "none";
   }
 
-  // Remove the background color of all tablinks/buttons
+  if(!detectmob()){// Remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
@@ -322,10 +322,16 @@ function openPage(pageName, elmnt) {
 
   // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = "white";
-	  elmnt.style.color = "black";
+	elmnt.style.color = "black";}
 }
 
-
+function detectmob() {
+   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
 
 </script>
 		<!-- Scripts -->
