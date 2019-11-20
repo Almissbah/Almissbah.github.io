@@ -35,9 +35,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="projects_p1.html">My Projects</a></li>
-							<li><a href="contactme.html">Contact Me</a></li>
+							<li class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</li>
+							<li class="tablink" onclick="openPage('MyProjects', this)" >My Projects</li>
+							<li class="tablink" onclick="openPage('ContactMe', this)">Contact Me</li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -46,87 +46,288 @@
 						</ul>
 					</nav>
 
+
 				<!-- Main -->
-					<div id="main">
 
-						<!-- Featured Post -->
-								<header class="major">
-									<span class="image"><img src="images/me.png" alt="" height="300" width="300"/></span>
-									<h2><a href="#">Hey again</a></h2>
-									<p>     I enjoy building softwares so i spent some time developing applicaions for different platforms, 
-									take a look around to see my projects and you can also download my CV from the link below.</p>
-									<a href="docs/almissbah_software_engineer.pdf" class="button large">Download My CV</a>
-								</header>
-								<dl>
-
-										<dt>
-											<h2><a href="#">Experiences</a></h2>
-											</dt>
-									<dt>
-										<header>
-											<h2>Software Engineer</h2>
-											<p> At <a href="https://nctr.sd">NCTR</a>  since 2015 till now.</p>
+			<!-- Home -->
+							<div id="Home" class="tabcontent">
+									<div id="main">
+								<!-- Featured Post -->
+										<header class="major">
+											<span class="image"><img src="images/me.png" alt="" height="300" width="300"/></span>
+											<h2><a href="#">Hey again</a></h2>
+											<p>     I enjoy building softwares so i spent some time developing applicaions for different platforms,
+											take a look around to see my projects and you can also download my CV from the link below.</p>
+											<a href="docs/almissbah_software_engineer.pdf" class="button large">Download My CV</a>
 										</header>
-										</dt>
-									<dd>
-										<ul>
-											<li>Participated in the development of national sudan projects such as sudan fuel managment system and sudan root CA.</li>
-											<li>Developed JAVA and PHP web applications with RESTfull APIs for web and anrdoid clients.</li>
-											<li>Participated in developing android applications with JAVA and Kotlin using MVP, MVVM, retrofit, Eventbus and FCM.</li>
-											<li>Developed and customaized UI and admin pages for PHP and JAVA web applications.</li>
-											<li>Participated in Development of smarcard APIs and libs for interacting with Desfire smartcards through APDU.</li>
-											
+										<dl>
+												<dt>
+													<h2><a href="#">Experiences</a></h2>
+													</dt>
+											<dt>
+												<header>
+													<h2>Software Engineer</h2>
+													<p> At <a href="https://nctr.sd">NCTR</a>  since 2015 till now.</p>
+												</header>
+												</dt>
+											<dd>
+												<ul>
+													<li>Participated in the development of national sudan projects such as sudan fuel managment system and sudan root CA.</li>
+													<li>Developed JAVA and PHP web applications with RESTfull APIs for web and anrdoid clients.</li>
+													<li>Participated in developing android applications with JAVA and Kotlin using MVP, MVVM, retrofit, Eventbus and FCM.</li>
+													<li>Developed and customaized UI and admin pages for PHP and JAVA web applications.</li>
+													<li>Participated in Development of smarcard APIs and libs for interacting with Desfire smartcards through APDU.</li>
+
+												</ul>
+											</dd>
+											<dt>
+												<header>
+													<h2>Full Stack Developer</h2>
+													<p>Freelancer since 2016 till now.</p>
+												</header></dt>
+											<dd>
+												<ul>
+													<li>Designed Databases and developed secure backend	applications using PHP & JAVA.</li>
+													<li>Built RESTFul APIs for Mobile and web clients.	</li>
+													<li>Developed native android applications using Java and kotlin and (IOS/Android) applications using Flutter.</li>
+												</ul>
+											</dd>
+											<dt>
+												<header>
+													<h2>Assistant Teacher</h2>
+													<p>At Alneelain University</p>
+												</header></dt>
+											<dd>
+												<ul>
+													<li>Part time teaching Android Cource for final year students..</li>
+													<li>Part time teaching Data Structure lab for 1st and 2nd year students.</li>
+												</ul>
+											</dd>
+										</dl>
+											<ul class="actions special">
+												<li><a href="https://github.com/Almissbah" class="button primary large">GitHub Profile</a></li>
 										</ul>
-									</dd>
-									<dt>
-										<header>
-											<h2>Full Stack Developer</h2>
-											<p>Freelancer since 2016 till now.</p>
-										</header></dt>
-									<dd>
-										<ul>
-											<li>Designed Databases and developed secure backend	applications using PHP & JAVA.</li>
-											<li>Built RESTFul APIs for Mobile and web clients.	</li>
-											<li>Developed native android applications using Java and kotlin and (IOS/Android) applications using Flutter.</li>
+									</div>
+		      		</div>
+						<!-- Home -->
+
+						<!-- MyProjects -->
+							<div id="MyProjects" class="tabcontent">
+								<!-- Featured Post -->
+								<div id="main">
+									<article class="post featured">
+										<header class="major">
+											<span class="date">April 25, 2017</span>
+											<h2><a href="#">Task Follow Up</a></h2>
+											<p> Android and JAVA web application to manage department projects and calculate employees working hours per projects, tasks and generate monthy reports.</p>
+										</header>
+										<a href="#"><img src="images/projects/tfu/icon.PNG" height="300" width="350" alt="" /></a>
+										<ul class="actions special">
+											<li><a href="projects/tfu.html" class="button large">More Details</a></li>
 										</ul>
-									</dd>
-									<dt>
-										<header>
-											<h2>Assistant Teacher</h2>
-											<p>At Alneelain University</p>
-										</header></dt>
-									<dd>
-										<ul>
-											<li>Part time teaching Android Cource for final year students..</li>
-											<li>Part time teaching Data Structure lab for 1st and 2nd year students.</li>
-										</ul>
-									</dd>
-								</dl>
-									<ul class="actions special">
-									<li><a href="projects_p1.html" class="button primary large">My Projects</a></li>
-										<li><a href="https://github.com/Almissbah" class="button large">GitHub Profile</a></li>
-								</ul>
+									</article>
+									<!-- Posts -->
+										<section class="posts">
+											<article>
+												<header>
+													<span class="date">April 24, 2017</span>
+													<h2><a href="#">Java PKI<br />
+													(JCE)</a></h2>
+												</header>
+												<a href="https://almissbah.github.io/java-pki-tutorial/" class="image fit"><img src="images/signer.png" alt="" /></a>
+												<p>This a simple implementation of Java Cryptography API.</p>
+												<ul class="actions special">
+													<li><a href="https://almissbah.github.io/java-pki-tutorial/" class="button">More Details</a></li>
+												</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date">April 22, 2017</span>
+													<h2><a href="#">Pediatric Health<br />
+													imperdiet lorem</a></h2>
+												</header>
+												<a href="https://almissbah.github.io/pediatric-health-android/" class="image"><img src="images/projects/health/icon.png" alt="" /></a>
+												<p>This Application for monitoring babies weight, length and diet.</p>
+												<ul class="actions special">
+													<li><a href="https://almissbah.github.io/pediatric-health-android/" class="button">More details</a></li>
+												</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date">April 18, 2017</span>
+													<h2><a href="#">Android<br />
+													MVVM, LiveData, Daggar2</a></h2>
+												</header>
+												<a href="https://almissbah.github.io/android-mvvm-dagger-livedata/" class="image fit"><img src="images/projects/wasit/icon.png" alt="" /></a>
+												<p>This a simple Application implementing mvvm and repository pattern.</p>
+												<ul class="actions special">
+													<li><a href="https://almissbah.github.io/android-mvvm-dagger-livedata/" class="button">More details</a></li>
+												</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date">April 14, 2017</span>
+													<h2><a href="#">Barbera Admin</a></h2>
+												</header>
+												<a href="https://almissbah.github.io/barbera-admin-android/" class="image fit"><img src="images/barbera.png" alt="" /></a>
+												<p>This is a demo Application for testing google FCM.</p>
+												<ul class="actions special">
+													<li><a href="https://almissbah.github.io/barbera-admin-android/" class="button">More details</a></li>
+												</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date">April 11, 2017</span>
+													<h2><a href="#">Barbera Client</a></h2>
+												</header>
+												<a href="https://almissbah.github.io/barbera-client-android/" class="image fit"><img src="images/barbera.png" alt="" /></a>
+												<p>This is a demo Application for testing google FCM.</p>
+												<ul class="actions special">
+													<li><a href="https://almissbah.github.io/barbera-client-android/" class="button">More Details</a></li>
+												</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date">April 7, 2017</span>
+													<h2><a href="#">Anaam</a></h2>
+												</header>
+												<a href="#" class="image fit"><img src="images/project_anaam_header.png" alt="" /></a>
+												<p>a Fresh meat ordering system, composed of three android apps for user, admin and delivery agents.</p>
+												<ul class="actions special">
+													<li><a href="#" class="button">More Details</a></li>
+												</ul>
+											</article>
+										</section>
+									</div>
+							</div>
 
-						<!-- Posts -->
-							<section class="posts">
+							<!-- MyProjects -->
+							<div id="ContactMe" class="tabcontent">
+								<div id="main">
 
-							</section>
+									<!-- Post -->
+										<section class="post">
+										<h2>If you like my work and you want to hire me or if you have any questions feel free to contact me.</h2>
+										</section>
 
-						<!-- Footer -->
-							<footer>
+								</div>
+									<footer id="footer">
+										<section>
+												<div class="fields">
+													<div class="field">
+														<label for="name">Your Name</label>
+														<input type="text" name="name" id="name" />
+													</div>
+													<div class="field">
+														<label for="email">Your Email</label>
+														<input type="text" name="email" id="email" />
+													</div>
+													<div class="field">
+														<label for="message">Message</label>
+														<textarea name="message" id="message" rows="3" ></textarea>
+													</div>
+												</div>
+												<ul class="actions">
+													<li><button type="btn large" onclick="sendMessage()">Send Message</button></li>
+												</ul>
+										</section>
+										<section class="split contact">
+											<section class="alt">
+												<h3>Address</h3>
+												<p>Khartoum,<br />
+												Sudan</p>
+											</section>
+											<section>
+												<h3>Phone</h3>
+												<p><a href="#">(000) 000-0000</a></p>
+											</section>
+											<section>
+												<h3>Email</h3>
+												<p><a href="#">Mohammed.almissbah@hotmail.com</a></p>
+											</section>
+											<section>
+												<h3>Social</h3>
+												<ul class="icons alt">
+													<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+												</ul>
+											</section>
+										</section>
+									</footer>
+							</div>
 
-							</footer>
+							<!-- MyProjects -->
+							<div id="MyArticles" class="tabcontent">
+								<div id="main">
+								</div>
+							</div>
 
-					</div>
 
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
-			</div>
+   			(function(){
+      				emailjs.init("user_1YmXQH5sEyAf2YWQ6rODy");
+   				})();
+        function sendEmail( name, email, message){
+								var templateParams = {
+												name: name,
+												email: email,
+												message: message
+												};
 
+				emailjs.send('gmail', 'hi', templateParams)
+				.then(function(response) {
+						alert("Thank you for contacting me, I will reply as soon as possible!");
+						console.log('SUCCESS!', response.status, response.text);
+					}, function(error) {
+						console.log('FAILED...', error);
+					});
+				}
+
+				function sendMessage(){
+					var name=document.getElementById("name").value;
+					var message=document.getElementById("message").value;
+					var email=document.getElementById("email").value;
+					if(name!=""&&email!=""&&message!="")
+					sendEmail(name,message,email);
+					else{
+						alert("Please fill all the fields!");
+					}
+					return true;
+				}
+
+
+function openPage(pageName, elmnt) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+		  tablinks[i].style.color = "white";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = "white";
+	  elmnt.style.color = "black";
+}
+
+
+
+</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
