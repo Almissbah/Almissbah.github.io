@@ -146,6 +146,11 @@
 			$navPanel = $(
 				'<div id="navPanel">' +
 					'<nav>' +
+					'<ul class="links">'
+						+'<li  onclick="openPage(\'Home\', this)" id="defaultOpen"><a href="#NavPanel">Home</a></li>'
+						+'<li  onclick="openPage(\'MyProjects\', this)" ><a href="#NavPanel">MyProjects</a></li>'
+						+'<li  onclick="openPage(\'ContactMe\', this)"><a href="#NavPanel">ContactMe</a></li>'
+					+'</ul>'+
 					'</nav>' +
 					'<a href="#navPanel" class="close"></a>' +
 				'</div>'
@@ -169,7 +174,6 @@
 				var $navContent = $nav.children();
 
 				breakpoints.on('>medium', function() {
-
 					// NavPanel -> Nav.
 						$navContent.appendTo($nav);
 
@@ -181,12 +185,8 @@
 
 				breakpoints.on('<=medium', function() {
 
-					// Nav -> NavPanel.
-						$navContent.appendTo($navPanelInner);
 
 					// Flip icon classes.
-						$navPanelInner.find('.icons, .icon')
-							.addClass('alt');
 
 				});
 
